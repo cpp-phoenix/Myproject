@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<p id="sk">On clicking the button, the content of paragraph will change to "Hello World"</p>
+		<button onclick="change()">Click here</button>
+		<p id="sk1">On clicking the button, this content of paragraph will change to "Hello World1"</p>
+		<button onclick="change1()">Click here</button>
+		<p class="sk2">Onclicking . . . . . . . . . . . . "Hello World2!</p>
+		<button onclick="change2()">click here</button>
+		<script>
+			function change()
+			{
+				document.getElementById("sk").innerHTML="Hello World!";
+			}
+			function change1()
+			{
+				var x=document.getElementsByTagName("p")[1];
+				x.innerHTML="Hello World1!";
+			}
+			function change2()
+			{
+				var y=document.getElementsByClassName("sk2");
+				y[0].innerHTML="Hello World2!";
+			}
+		</script>
+	</body>
+</html>
